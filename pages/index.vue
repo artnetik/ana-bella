@@ -42,13 +42,14 @@
   max-width: 1200px;
 
   img {
-    padding: 2rem;
     width: 100%;
-    max-width: 476px;
+    max-width: 450px;
+    margin: 1rem 0 1.5rem;
   }
 }
 
 .body {
+  padding: 2rem;
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -57,14 +58,22 @@
 
   .main-text {
     font-family: 'PT Mono', monospace;
-    font-size: 46px;
     margin-top: 1rem;
     margin-bottom: .5rem;
+    font-size: 38px;
+
+    @include breakpoint(medium) {
+      font-size: 46px;
+    }
   }
 
   .second-text {
     font-family: 'PT Mono', monospace;
-    font-size: 30px;
+    font-size: 24px;
+
+    @include breakpoint(medium) {
+      font-size: 30px;
+    }
   }
 
   .address {
