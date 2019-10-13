@@ -43,6 +43,8 @@
 
   img {
     padding: 2rem;
+    width: 100%;
+    max-width: 476px;
   }
 }
 
@@ -52,8 +54,6 @@
   justify-content: center;
   align-items: center;  
   flex-flow: column;
-  width: 100%;
-  max-width: 476px;
 
   .main-text {
     font-family: 'PT Mono', monospace;
