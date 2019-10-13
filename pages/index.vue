@@ -21,9 +21,7 @@
 </template>
 
 <script>
-export default {
 
-}
 </script>
 
 <style lang="scss">
@@ -47,7 +45,6 @@ export default {
     padding: 2rem;
   }
 }
-
 
 .body {
   display: flex;
@@ -95,6 +92,7 @@ export default {
   text-align: center;
 
   img {
+    width: 100%;
     max-width: 300px;
 
     @include breakpoint(medium) {
