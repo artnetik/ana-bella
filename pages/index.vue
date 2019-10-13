@@ -1,72 +1,105 @@
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        ana-bella.si
-      </h1>
-      <h2 class="subtitle">
-        Ana Bella official website
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    <div class="d-flex main">
+      <div class="image">
+        <h1 class="visually-hidden">Ana Bella</h1>
+        <img src="/images/ana-bella-image.svg" alt="Ana Bella">
+      </div>
+      <div class="body">
+        <img src="/images/ana-bella-logo.svg" alt="Ana Bella">
+        <p class="main-text">Kmalu z vami</p>
+        <p class="second-text">With you shortly</p>
+        <div class="address">
+          <p>
+            Družina Čehovin  <br/> Brje 76B, 5263 Dobravlje
+          </p>
+          <p><a href="mailto:info@ana-bella.si">info@ana-bella.si</a></p>
+        </div>  
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
-  }
+
 }
 </script>
 
-<style>
+<style lang="scss">
+@import "~assets/styles/_mixins.scss";
+
 .container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url('/images/main-bg.svg') no-repeat center center;
+  background-size: 100%;
+}
+
+.main {
+  width: 100%;
+  max-width: 1200px;
+
+  img {
+    padding: 2rem;
+  }
+}
+
+
+.body {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;  
+  flex-flow: column;
+
+  .main-text {
+    font-family: 'PT Mono', monospace;
+    font-size: 46px;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  .second-text {
+    font-family: 'PT Mono', monospace;
+    font-size: 30px;
+  }
+
+  .address {
+    background: url('/images/divider.svg') no-repeat top;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    font-size: 18px;
+    text-align: center;
+    color: grey;
+    width: 100%;
+    max-width: 340px;
+
+    a {
+      display: block;
+      padding-top: 1rem;
+      color: #D6B576;
+
+      &:hover {
+        text-decoration: none;
+        color: #83582C;
+      }
+    }
+  }
+}
+
+.image {
   text-align: center;
-}
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
+  img {
+    max-width: 300px;
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+    @include breakpoint(medium) {
+    max-width: 100%;
+    }
+  }
 }
 </style>

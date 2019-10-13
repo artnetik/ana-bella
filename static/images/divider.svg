@@ -1,0 +1,12 @@
+<svg width="374" viewBox="0 0 374 5" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2">
+    <path fill="url(#_Linear1)" d="M0 0h373.657v4.913H0z"/>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="rotate(-7.815 208.866 60.638) scale(427.2858)">
+            <stop offset="0" stop-color="#d1ad6a"/>
+            <stop offset=".18" stop-color="#663815"/>
+            <stop offset=".39" stop-color="#d1ad6a"/>
+            <stop offset=".94" stop-color="#fcedc9"/>
+            <stop offset="1" stop-color="#fcedc9"/>
+        </linearGradient>
+    </defs>
+</svg>
