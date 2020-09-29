@@ -1,0 +1,34 @@
+.section-title {
+  display: inline-block;
+  font-family:
+    'Courier Prime',
+    monospace;
+  font-size: 34px;
+  font-weight: bold;
+  margin: 0 auto 3rem;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+
+  &::after {
+    background-color: $ascent;
+    bottom: 2px;
+    content: '';
+    height: 12px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.divider {
+  background-color: $ascent;
+  bottom: 2px;
+  height: 8px;
+  margin: 2rem 0 4rem;
+}
