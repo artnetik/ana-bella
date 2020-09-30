@@ -19,6 +19,6 @@
   background-position: center center;
   background-size: cover;
   margin-top: 2rem;
-  min-height: 650px;
+  min-height: 60vh;
 }
 </style>

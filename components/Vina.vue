@@ -24,9 +24,7 @@
       <p>Pri pridelavi vina dajemo prednost avtohtonim vinskih sortam, ki tu že od nekdaj najbolje uspevajo.</p>
     </div>
 
-    <div class="foto mt-3">
-      <img src="/images/vinske-dekline.jpg" alt="">
-    </div>
+    <div class="foto mt-3" />
   </div>
 </template>
 
@@ -51,9 +49,11 @@ export default {
   }
 
   .foto {
-    img {
-      max-width: 100%;
-    }
+    background: url('/images/vinske-dekline.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    position: relative;
   }
 
   .buteljke {

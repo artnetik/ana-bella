@@ -45,17 +45,19 @@ export default {
 
 <style lang="scss" scoped>
 @import '~assets/styles/variables';
+@import '~assets/styles/mixins';
 
 .kontakt {
   padding: 4rem 0 0;
 
   .row {
     display: flex;
+    flex-wrap: wrap;
   }
 
   .cell {
-    flex-basis: 50%;
-    min-height: 500px;
+    flex: 1 0 50%;
+    min-width: 340px;
   }
 
   .address {
@@ -66,6 +68,7 @@ export default {
       'Courier Prime',
       monospace;
     line-height: 1.5em;
+    min-height: 400px;
     place-content: center;
   }
 
@@ -76,8 +79,12 @@ export default {
 
 .vue-map-container {
   max-width: 992px;
-  min-height: 500px;
+  min-height: 400px;
   width: 100%;
+
+  @include breakpoint(medium) {
+    min-height: 500px;
+  }
 }
 
 </style>

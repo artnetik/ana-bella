@@ -44,8 +44,12 @@ html {
   margin-left: auto;
   margin-right: auto;
   max-width: 705px;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   padding-bottom: 3rem;
+
+  @include breakpoint(medium) {
+    padding: 1rem;
+  }
 
   p {
     font-family:
