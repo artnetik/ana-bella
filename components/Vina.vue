@@ -5,16 +5,18 @@
       <template v-slot:subtitle>Naše vinske lepotice</template>
     </Title>
 
-    <div class="buteljke">
-      <div
-        v-for="vino in vina"
-        :key="vino.id"
-        class="buteljka"
-      >
-        <div class="slika">
-          <img :src="vino.slika" :alt="vino.sorta">
+    <div class="container">
+      <div class="buteljke">
+        <div
+          v-for="vino in vina"
+          :key="vino.id"
+          class="buteljka"
+        >
+          <div class="slika">
+            <img :src="vino.slika" :alt="vino.sorta">
+          </div>
+          <div class="sorta" v-text="vino.sorta" />
         </div>
-        <div class="sorta" v-text="vino.sorta" />
       </div>
     </div>
 
@@ -47,39 +49,51 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .vina {
-    padding: 4rem 0;
+@import '~assets/styles/mixins';
+
+.vina {
+  padding: 4rem 0;
+}
+
+.foto {
+  background: url('/images/vinske-dekline.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 60vh;
+  position: relative;
+}
+
+.buteljke {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.buteljka {
+  flex: 0 1 50%;
+  padding: 0 1rem;
+  text-align: center;
+
+  @include breakpoint(medium) {
+    flex: 0 1 25%;
   }
 
-  .foto {
-    background: url('/images/vinske-dekline.jpg') no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 60vh;
-    position: relative;
+  .sorta {
+    font-family:
+      'Courier Prime',
+      monospace;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
   }
 
-  .buteljke {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 4rem;
-  }
-
-  .buteljka {
-    .sorta {
-      font-family:
-        'Courier Prime',
-        monospace;
-      font-size: 18px;
-      font-weight: bold;
-      margin-top: 1rem;
-      text-align: center;
+  .slika {
+    img {
+      max-width: 200px;
     }
-
-    .slika {
-      img {
-        max-width: 100%;
-      }
-    }
   }
+}
 </style>
