@@ -5,9 +5,7 @@
       <!-- <Menu /> -->
     </Zgodba>
     <Vina />
+    <Kmetija />
+    <Kontakt />
   </div>
 </template>
-
-<script>
-export default {}
-</script>

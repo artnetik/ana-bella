@@ -1,10 +1,9 @@
 <template>
   <div class="vina">
-    <div class="text-center">
-      <h2 class="section-title">
-        Vina
-      </h2>
-    </div>
+    <Title>
+      Vina
+      <template v-slot:subtitle>Naše vinske lepotice</template>
+    </Title>
 
     <div class="buteljke">
       <div
@@ -20,13 +19,12 @@
     </div>
 
     <div class="text-container">
-      <div class="divider" />
       <p>Pridelujemo vrhunska stekleničena vina: <strong>barbera</strong>, <strong>chardonnay</strong>, <strong>sauvignon</strong>, bele in rdeče zvrsti. Grozdje je <strong>obrano ročno</strong>, stiskanje grozdja poteka hitro s <strong>pnevmatsko prešo</strong>. Mošt je hlajen, da se ohranijo vsi aduti, ki jih posamezna sorta premore.</p>
       <p>Rdeče sorte maceriramo od 5 do 8 dni, odvisno od sorte in letnika. Na kmetiji težimo k čim boljši kakovosti; v vinograde in nasade vlagamo veliko časa in truda. Želimo, da bodo naši izdelki butični, zato ohranjamo vinograde z najboljšo lego.</p>
       <p>Pri pridelavi vina dajemo prednost avtohtonim vinskih sortam, ki tu že od nekdaj najbolje uspevajo.</p>
     </div>
 
-    <div class="foto">
+    <div class="foto mt-3">
       <img src="/images/vinske-dekline.jpg" alt="">
     </div>
   </div>
@@ -49,7 +47,7 @@ export default {
 
 <style lang="scss" scoped>
   .vina {
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 
   .foto {
