@@ -20,18 +20,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
-import VueScrollTo from 'vue-scrollto'
-
-Vue.use(VueScrollTo, {
-  container: 'body',
-  duration: 1200,
-  easing: 'ease-in-out'
-})
-
-export default {
-
-}
+export default {}
 </script>
 
 <style lang="scss" scoped>

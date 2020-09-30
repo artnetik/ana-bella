@@ -19,6 +19,9 @@
     </div>
 
     <div class="text-container">
+      <div class="text-center">
+        <a v-scroll-to="'#kontakt'" href="#kontakt" class="btn outlined centered mb-2"> Naročilo</a>
+      </div>
       <p>Pridelujemo vrhunska stekleničena vina: <strong>barbera</strong>, <strong>chardonnay</strong>, <strong>sauvignon</strong>, bele in rdeče zvrsti. Grozdje je <strong>obrano ročno</strong>, stiskanje grozdja poteka hitro s <strong>pnevmatsko prešo</strong>. Mošt je hlajen, da se ohranijo vsi aduti, ki jih posamezna sorta premore.</p>
       <p>Rdeče sorte maceriramo od 5 do 8 dni, odvisno od sorte in letnika. Na kmetiji težimo k čim boljši kakovosti; v vinograde in nasade vlagamo veliko časa in truda. Želimo, da bodo naši izdelki butični, zato ohranjamo vinograde z najboljšo lego.</p>
       <p>Pri pridelavi vina dajemo prednost avtohtonim vinskih sortam, ki tu že od nekdaj najbolje uspevajo.</p>

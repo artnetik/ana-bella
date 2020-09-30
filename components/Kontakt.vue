@@ -1,5 +1,5 @@
 <template>
-  <div class="kontakt">
+  <div id="kontakt" class="kontakt">
     <Title>Kontakt <template v-slot:subtitle>Stopite v stik z nami</template></Title>
     <div class="row">
       <div class="cell map">

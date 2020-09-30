@@ -38,7 +38,6 @@ export default {
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
-  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
@@ -48,14 +47,15 @@ export default {
   env: {
     VUE_APP_GOOGLE_MAPS_API_KEY: process.env.VUE_APP_GOOGLE_MAPS_API_KEY
   },
-  // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    // https://go.nuxtjs.dev/content
     '@nuxt/content',
     '@nuxtjs/dotenv',
-    'vue-scrollto/nuxt'
+    ['vue-scrollto/nuxt', {
+      duration: 1000,
+      container: 'body',
+      easing: 'ease-in-out'
+    }]
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

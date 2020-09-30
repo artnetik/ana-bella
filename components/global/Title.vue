@@ -49,8 +49,4 @@ export default {
   margin: -2rem auto 3rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
 </style>

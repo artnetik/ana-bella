@@ -23,15 +23,19 @@ html {
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
   text-size-adjust: 100%;
   word-spacing: 1px;
+}
+
+body {
+  margin: 0;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
 }
 
 .container {
