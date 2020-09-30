@@ -7,5 +7,6 @@
     <Vina />
     <Kmetija />
     <Kontakt />
+    <Footer />
   </div>
 </template>

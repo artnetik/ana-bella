@@ -54,7 +54,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    'vue-scrollto/nuxt'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

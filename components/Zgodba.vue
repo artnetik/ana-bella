@@ -1,5 +1,5 @@
 <template>
-  <div class="zgodba">
+  <div id="zgodba" class="zgodba">
     <div class="foto">
       <slot />
     </div>
@@ -19,19 +19,12 @@
   </div>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style lang="scss" scoped>
-
 .foto {
   background: url('/images/zgodba.jpg') no-repeat;
   background-position: center bottom;
   background-size: cover;
-  min-height: 80vh;
+  min-height: 70vh;
   position: relative;
 }
 </style>

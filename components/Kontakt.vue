@@ -3,7 +3,7 @@
     <Title>Kontakt <template v-slot:subtitle>Stopite v stik z nami</template></Title>
     <div class="row">
       <div class="cell map">
-        <gmap-map :center="center" :map-type-id="mapTypeId" :zoom="10">
+        <gmap-map :center="center" :map-type-id="'roadmap'" :zoom="10">
           <gmap-marker
             v-for="(item, index) in markers"
             :key="index"
@@ -16,14 +16,14 @@
         <div class="logo mb-2">
           <img width="220" src="/images/ana-bella-logo-white.svg" alt="Ana Bella Logo">
         </div>
-        <div class="naslov">
+        <address class="naslov">
           Dagmar in Aleš Čehovin<br>
           Brje 76 b<br>
           5263 Dobravlje - Slovenija<br>
           <br>
           Aleš: +386 41 507 675<br>
           Dagmar: +386 41 953 448<br>
-        </div>
+        </address>
       </div>
     </div>
   </div>
@@ -47,7 +47,7 @@ export default {
 @import '~assets/styles/variables';
 
 .kontakt {
-  padding: 4rem 0;
+  padding: 4rem 0 0;
 
   .row {
     display: flex;
@@ -67,6 +67,10 @@ export default {
       monospace;
     line-height: 1.5em;
     place-content: center;
+  }
+
+  address {
+    font-style: normal;
   }
 }
 
