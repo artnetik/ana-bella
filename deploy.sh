@@ -1,5 +1,5 @@
 set -e
-npm install
+# npm install
 npm run generate
 cd dist
 echo 'ana-bella.si' > CNAME

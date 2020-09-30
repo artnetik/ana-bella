@@ -17,7 +17,7 @@ export default {}
 @import '~assets/styles/variables';
 
 .intro {
-  align-items: flex-end;
+  align-items: center;
   background: $ascent url('/images/intro-bg.jpg') no-repeat;
   background-position: center bottom;
   background-size: cover;
