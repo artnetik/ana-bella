@@ -4,6 +4,8 @@ $base: #231f20;
 $white: #fff;
 $ascent: #f2abaf;
 
+$grey: lighten($base, 60%);
+
 // Animations
 
 $quick: ease-in-out 150ms;

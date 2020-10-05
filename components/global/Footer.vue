@@ -1,16 +1,21 @@
 <template>
   <div class="footer">
     <div class="container">
-      <div class="copyright">
-        Kmetija Čehovin &copy; 2020 Vse pravice pridržane
+      <div class="social">
+        <p>Sledite nam na:</p>
+        <SocialLinks />
       </div>
+
       <div class="partners">
         <div class="logo">
-          <img src="/images/las-logo.png" alt="LAS">
+          <img src="/images/PRP-LEADER-EU-SLO.jpg">
         </div>
         <div class="logo">
-          <img src="/images/rod-logo.jpg" alt="ROD">
+          <img src="/images/regionalni-razvoj.jpg">
         </div>
+      </div>
+      <div class="copyright">
+        Kmetija Čehovin &copy; 2020 Vse pravice pridržane
       </div>
       <a v-scroll-to="'#zgodba'" href="#zgodba">
         <img width="50" src="/images/tit.png" alt="">
@@ -42,12 +47,16 @@ export default {}
 
   .logo {
     height: 80px;
-    padding: 0 1rem;
 
     img {
-      height: 60px;
+      height: 80px;
       max-width: 100%;
     }
   }
+}
+
+.copyright {
+  font-size: 15px;
+  margin-bottom: 3rem;
 }
 </style>
