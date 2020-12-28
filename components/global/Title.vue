@@ -21,10 +21,10 @@ export default {
 .section-title {
   display: inline-block;
   font-family:
-    'Courier Prime',
+    LLRG,
     monospace;
-  font-size: 42px;
-  font-weight: bold;
+  font-size: 46px;
+  font-weight: normal;
   margin: 0 auto 3rem;
   padding: 0 10px;
   position: relative;
@@ -44,7 +44,11 @@ export default {
 
 .subtitle {
   color: rgba($base, 0.6);
+  font-family:
+    CourierPrime,
+    monospace;
   font-size: 18px;
+  font-weight: bold;
   letter-spacing: 0.15em;
   margin: -2rem auto 3rem;
 }

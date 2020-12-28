@@ -1,12 +1,13 @@
 <template>
-  <div>
-    <div class="ribbon">
+  <div data-sticky-container>
+    <!-- <div class="ribbon">
       Stran v izdelavi
-    </div>
+    </div> -->
     <Intro />
     <Zgodba>
-      <!-- <Menu /> -->
+      <Menu :class="'selector'" />
     </Zgodba>
+    <Vinogradi />
     <Vina />
     <Kmetija />
     <Kontakt />
@@ -14,15 +15,27 @@
   </div>
 </template>
 
-<style lang="scss">
-  .ribbon {
-    background-color: #000;
-    color: #fff;
-    display: block;
-    font-weight: bold;
-    padding: 10px 50px;
-    position: fixed;
-    transform: rotate(-40deg) translateX(-60px);
-    z-index: 50;
+<script>
+import Sticky from 'sticky-js'
+export default {
+  mounted () {
+    const sticky = new Sticky('.selector')
   }
+}
+</script>
+
+<style lang="scss">
+// @import '~assets/styles/variables';
+
+// .ribbon {
+//   background-color: $ascent;
+//   color: $base;
+//   display: block;
+//   font-size: 12px;
+//   font-weight: bold;
+//   padding: 10px 60px;
+//   position: fixed;
+//   transform: rotate(-40deg) translateX(-55px) translateY(-15px);
+//   z-index: 30;
+// }
 </style>

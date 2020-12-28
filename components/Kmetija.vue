@@ -1,5 +1,5 @@
 <template>
-  <div class="kmetija">
+  <div id="kmetija" class="kmetija">
     <Title>Kmetija <template v-slot:subtitle>Pri nas ste vedno dobrodošli</template></Title>
     <div class="foto" />
     <div class="text-container mt-4">

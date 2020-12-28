@@ -19,6 +19,12 @@
     }
   }
 
+  @else if $point=='medium down' {
+    @media (max-width: 50em) {
+      @content ;
+    }
+  }
+
   @else if $point==small down {
     @media (max-width: 50em) {
       @content ;

@@ -20,6 +20,10 @@
 </template>
 
 <style lang="scss" scoped>
+.zgodba {
+  padding: 0 0 5rem;
+}
+
 .foto {
   background: url('/images/zgodba.jpg') no-repeat;
   background-position: center bottom;

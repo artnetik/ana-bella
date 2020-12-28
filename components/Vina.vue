@@ -1,5 +1,5 @@
 <template>
-  <div class="vina">
+  <div id="vina" class="vina">
     <Title>
       Vina
       <template v-slot:subtitle>Naše vinske lepotice</template>

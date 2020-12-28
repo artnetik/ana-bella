@@ -1,5 +1,22 @@
-// Colors
+// Fonts
 
+@font-face {
+  font-family: CourierPrime;
+  src: url('~assets/fonts/CourierPrime-Regular.ttf');
+}
+
+@font-face {
+  font-family: CourierPrimeBold;
+  src: url('~assets/fonts/CourierPrime-Bold.ttf');
+}
+
+@font-face {
+  font-family: LLRG;
+  src: url('~assets/fonts/LLRG.ttf');
+}
+
+// Colors
+$active: #d73427;
 $base: #231f20;
 $white: #fff;
 $ascent: #f2abaf;

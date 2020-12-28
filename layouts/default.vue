@@ -57,7 +57,7 @@ body {
 
   p {
     font-family:
-      'Courier Prime',
+      CourierPrime,
       monospace;
     line-height: 1.5em;
     margin-bottom: 1rem;

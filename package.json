@@ -9,27 +9,28 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
-    "lint": "npm run lint:js && npm run lint:style"
+    "lint": "npm run lint:js && npm run lint:style --fix"
   },
   "dependencies": {
-    "@nuxt/content": "^1.8.1",
-    "@nuxtjs/axios": "^5.12.2",
-    "core-js": "^3.6.5",
-    "nuxt": "^2.14.5",
-    "vue-scrollto": "^2.18.2",
+    "@nuxt/content": "^1.11.1",
+    "@nuxtjs/axios": "^5.12.4",
+    "core-js": "^3.8.1",
+    "nuxt": "^2.14.12",
+    "sticky-js": "^1.3.0",
+    "vue-scrollto": "^2.20.0",
     "vue2-google-maps": "^0.10.7"
   },
   "devDependencies": {
     "@nuxtjs/dotenv": "^1.4.1",
-    "@nuxtjs/eslint-config": "^3.1.0",
-    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.8.1",
-    "eslint-plugin-nuxt": "^1.0.0",
-    "node-sass": "^4.14.1",
-    "sass-loader": "^10.0.2",
-    "stylelint": "^13.7.2",
+    "eslint": "^7.16.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^10.1.0",
+    "stylelint": "^13.8.0",
     "stylelint-config-sass-guidelines": "^7.1.0",
     "stylelint-config-standard": "^20.0.0"
   }
