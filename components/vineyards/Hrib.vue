@@ -5,7 +5,7 @@
         <img src="/images/vinogradi/hrib.svg" alt="Icon for Hrib vineyard">
         <h2>{{ hrib.name }}</h2>
       </div>
-      <h3>terase, z obilico <br>sonca in juzno lego</h3>
+      <h3>{{ hrib.shortText }}</h3>
     </div>
 
     <p>{{ hrib.mainText }}</p>
@@ -17,7 +17,7 @@ export default {
     return {
       hrib: {
         name: 'Hrib',
-        shortText: 'terase, z obilico sonca in juzno lego',
+        shortText: 'terase z obilico sonca in južno lego',
         mainText: `Hrib nad vasjo, južna lega Vipavske Doline. Rebula ljubljenka teras
                     in obilice sonca. Le kaj naj povemo o tej priljubljeni sorti, česar
                     niso že kritiki, enologi in vinarji o njej povedali in zapisali. Je

@@ -28,7 +28,7 @@ export default {
                     jutranjega sonca, ki vzide izopod nanoške planote, do poznega večera,
                     ko se sonce spusti za Sabotinom. Močna burja, pozimi mrzel zrak iz
                     doline in poletna vročina, ki se upre v pobočje, daje trti beli pinot
-                    in sauvignon izjemno karakteristiko. Vino je bogato s cvetličnimi in
+                    in sauvignon izjemno karakteristiko. Vino je bogato s cvetnimi in
                     sadnimi aromami. Sveže in iskrivo, ki v kozarcu podaljšuje užitek, da
                     ga vedno znova zavrtimo, vonjamo in okušamo.
                     `

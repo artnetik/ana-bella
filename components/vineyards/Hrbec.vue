@@ -8,7 +8,7 @@
         >
         <h2>{{ hrbec.name }}</h2>
       </div>
-      <h3>terase, z razgledom na <br>lepote doline</h3>
+      <h3>{{ hrbec.shortText }}</h3>
     </div>
     <p>{{ hrbec.mainText }}</p>
   </div>

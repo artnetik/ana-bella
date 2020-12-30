@@ -17,42 +17,42 @@
     </div>
 
     <Rebisce v-show="showVineyard === 'rebisce'" />
-    <Leskovca v-show="showVineyard === 'leskovca'" />
+    <Bavcarca v-show="showVineyard === 'bavcarca'" />
     <Rovna v-show="showVineyard === 'rovna'" />
     <Hrbec v-show="showVineyard === 'hrbec'" />
     <Hrib v-show="showVineyard === 'hrib'" />
-    <Glinsek v-show="showVineyard === 'glinsek'" />
+    <Glinek v-show="showVineyard === 'glinek'" />
   </div>
   </div>
 </template>
 
 <script>
 import Rebisce from './vineyards/Rebisce'
-import Leskovca from './vineyards/Leskovca'
+import Bavcarca from './vineyards/Bavcarca'
 import Rovna from './vineyards/Rovna'
 import Hrbec from './vineyards/Hrbec'
 import Hrib from './vineyards/Hrib'
-import Glinsek from './vineyards/Glinsek'
+import Glinek from './vineyards/Glinek'
 
 export default {
   components: {
     Rebisce,
-    Leskovca,
+    Bavcarca,
     Rovna,
     Hrbec,
     Hrib,
-    Glinsek
+    Glinek
   },
   data () {
     return {
       showVineyard: 'rebisce',
       vinogradi: {
         rebisce: { name: 'Rebišče', show: 'rebisce', icon: '/images/vinogradi/rebisce.svg' },
-        leskovca: { name: 'Leskovca', show: 'leskovca', icon: '/images/vinogradi/leskovca.svg' },
+        bavcarca: { name: 'Bavčarca', show: 'bavcarca', icon: '/images/vinogradi/bavcarca.svg' },
         rovna: { name: 'Rovna', show: 'rovna', icon: '/images/vinogradi/rovna.svg' },
         hrbec: { name: 'Hrbec', show: 'hrbec', icon: '/images/vinogradi/hrbec.svg' },
         hrib: { name: 'Hrib', show: 'hrib', icon: '/images/vinogradi/hrib.svg' },
-        glinsek: { name: 'Glinšek', show: 'glinsek', icon: '/images/vinogradi/glinsek.svg' }
+        glinek: { name: 'Glinek', show: 'glinek', icon: '/images/vinogradi/glinek.svg' }
       }
     }
   },

@@ -3,15 +3,13 @@
     <div class="main">
       <div class="icon">
         <img
-          src="/images/vinogradi/glinsek.svg"
+          src="/images/vinogradi/glinek.svg"
           alt="Icon for Glinek vineyard"
         >
         <h2>{{ glinsek.name }}</h2>
       </div>
       <h3>
-        najvišji vinograd,<br>
-        s pogledi v Braniško<br>
-        in Vipavsko dolino.
+        {{ glinsek.shortText }}
       </h3>
     </div>
     <p>
