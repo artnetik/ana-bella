@@ -96,7 +96,7 @@ export default {
   }
 
   .active {
-    color: $active;
+    color: $ascent;
   }
 }
 

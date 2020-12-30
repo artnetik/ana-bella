@@ -71,7 +71,7 @@ export default {
 .vinograd {
   align-items: center;
   display: flex;
-  font-family: 'CurierPrime', monospace;
+  font-family: 'Curier Prime', monospace;
   height: 300px;
   justify-content: space-evenly;
   margin: 50px;
@@ -147,7 +147,7 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  font-family: 'CurierPrime', monospace;
+  font-family: 'Curier Prime', monospace;
   height: 60vh;
   justify-content: space-between;
   margin-top: 10px;
