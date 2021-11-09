@@ -18,7 +18,7 @@
         <n-link to="/">
           <img src="/images/ana-bella-logo-grey.svg" alt="Ana Bella">
         </n-link>
-        <a href="https://ketija-cehovin.si" target="_blank" rel="noopener">
+        <a href="https://kmetija-cehovin.si" target="_blank" rel="noopener" title="Kmetija Čehovin ">
           <img src="/images/cehovin-logo-grey.svg" alt="Kmetija Čehovin">
         </a>
       </div>
