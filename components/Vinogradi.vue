@@ -1,13 +1,17 @@
 <template>
   <div id="vinogradi">
     <div class="img-container">
-      <div v-for="vinograd in vinogradi" :key="vinograd.name" class="icon-container">
+      <div
+        v-for="vinograd in vinogradi"
+        :key="vinograd.name"
+        class="icon-container"
+        @click="changeVineyard(vinograd.show)"
+      >
         <div
           class="svg-icon"
           :class="{ 'svg-icon-active': showVineyard === vinograd.show }"
-          @click="changeVineyard(vinograd.show)"
         >
-          <img :src="vinograd.icon" :alt="`${vinograd.name}`">
+          <img :src="vinograd.icon" :alt="`${vinograd.name}`" />
         </div>
         <p class="img-label">
           {{ vinograd.name }}
@@ -17,63 +21,69 @@
     </div>
 
     <Rebisce v-show="showVineyard === 'rebisce'" />
-    <Bavcarca v-show="showVineyard === 'bavcarca'" />
-    <Rovna v-show="showVineyard === 'rovna'" />
-    <Hrbec v-show="showVineyard === 'hrbec'" />
     <Hrib v-show="showVineyard === 'hrib'" />
     <Glinek v-show="showVineyard === 'glinek'" />
-  </div>
+    <Log v-show="showVineyard === 'log'" />
   </div>
 </template>
 
 <script>
-import Rebisce from './vineyards/Rebisce'
-import Bavcarca from './vineyards/Bavcarca'
-import Rovna from './vineyards/Rovna'
-import Hrbec from './vineyards/Hrbec'
-import Hrib from './vineyards/Hrib'
-import Glinek from './vineyards/Glinek'
+import Rebisce from "./vineyards/Rebisce";
+import Hrib from "./vineyards/Hrib";
+import Glinek from "./vineyards/Glinek";
+import Log from "./vineyards/Log";
 
 export default {
   components: {
     Rebisce,
-    Bavcarca,
-    Rovna,
-    Hrbec,
     Hrib,
-    Glinek
+    Glinek,
+    Log,
   },
-  data () {
+  data() {
     return {
-      showVineyard: 'rebisce',
+      showVineyard: "rebisce",
       vinogradi: {
-        rebisce: { name: 'Rebišče', show: 'rebisce', icon: '/images/vinogradi/rebisce.svg' },
-        bavcarca: { name: 'Bavčarca', show: 'bavcarca', icon: '/images/vinogradi/bavcarca.svg' },
-        rovna: { name: 'Rovna', show: 'rovna', icon: '/images/vinogradi/rovna.svg' },
-        hrbec: { name: 'Hrbec', show: 'hrbec', icon: '/images/vinogradi/hrbec.svg' },
-        hrib: { name: 'Hrib', show: 'hrib', icon: '/images/vinogradi/hrib.svg' },
-        glinek: { name: 'Glinek', show: 'glinek', icon: '/images/vinogradi/glinek.svg' }
-      }
-    }
+        Rebisce: {
+          name: "Rebišče",
+          show: "rebisce",
+          icon: "/images/vinogradi/rebisce.svg",
+        },
+        hrib: {
+          name: "Hrib",
+          show: "hrib",
+          icon: "/images/vinogradi/hrib.svg",
+        },
+        glinek: {
+          name: "Glinek",
+          show: "glinek",
+          icon: "/images/vinogradi/glinek.svg",
+        },
+        log: {
+          name: "Log",
+          show: "log",
+          icon: "/images/vinogradi/hrbec.svg",
+        },
+      },
+    };
   },
   methods: {
-    changeVineyard (value) {
-      this.showVineyard = value
-    }
-  }
-}
+    changeVineyard(value) {
+      this.showVineyard = value;
+    },
+  },
+};
 </script>
 
 <style lang="scss">
-@import '~assets/styles/mixins';
-@import '~assets/styles/variables';
+@import "~assets/styles/mixins";
+@import "~assets/styles/variables";
 
 .vinograd {
   align-items: center;
   display: flex;
-  font-family: 'Curier Prime', monospace;
-  height: 300px;
-  justify-content: space-evenly;
+  font-family: "Curier Prime", monospace;
+  align-items: flex-start;
   margin: 50px;
   margin-bottom: 100px;
 
@@ -85,9 +95,8 @@ export default {
 
   .main {
     align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    width: 20%;
+    flex-shrink: 0;
+    flex: 1 0 30%;
 
     @include breakpoint(medium down) {
       justify-content: space-between;
@@ -121,33 +130,30 @@ export default {
     font-size: 18px;
     line-height: 1.5em;
     margin-left: 50px;
-    margin-top: 150px;
-    width: 55%;
 
     @include breakpoint(800px) {
       font-size: 18px;
       margin: 20px auto 40px;
       text-align: justify;
-      width: 80%;
+      max-width: 80%;
     }
 
     @include breakpoint(600px) {
       font-size: 14px;
       margin: 20px auto 40px;
       text-align: justify;
-      width: 80%;
     }
   }
 }
 
 .img-container {
   align-items: flex-end;
-  background-image: url('/images/vinograd.jpg');
+  background-image: url("/images/vinograd.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  font-family: 'Curier Prime', monospace;
+  font-family: "Curier Prime", monospace;
   height: 60vh;
   justify-content: space-between;
   margin-top: 10px;
@@ -171,6 +177,7 @@ export default {
   display: flex;
   flex-direction: column;
   padding-right: 30px;
+  cursor: pointer;
 
   .svg-icon {
     align-items: center;
@@ -183,7 +190,6 @@ export default {
     transition: 0.2s;
 
     &:hover {
-      cursor: pointer;
       filter: none;
       transform: scale(1.05);
     }
@@ -208,7 +214,7 @@ export default {
 
   .tr::before {
     background: $white;
-    content: '';
+    content: "";
     height: 100%;
     left: 0;
     position: absolute;
