@@ -16,12 +16,13 @@
 </template>
 
 <script>
-import Sticky from 'sticky-js'
+import Sticky from "sticky-js";
+
 export default {
-  mounted () {
-    const sticky = new Sticky('.selector')
-  }
-}
+  mounted() {
+    const sticky = new Sticky(".selector");
+  },
+};
 </script>
 
 <style lang="scss">
