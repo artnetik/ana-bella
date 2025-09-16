@@ -3,24 +3,10 @@
     <div class="main">
       <div class="icon">
         <img src="/images/vinogradi/hrbec.svg" alt="Log" />
-        <h2>{{ hrbec.name }}</h2>
+        <h2>Log</h2>
       </div>
-      <h3>{{ hrbec.shortText }}</h3>
+      <h3>nov vinograd v obnovi</h3>
     </div>
-    <p>{{ hrbec.mainText }}</p>
+    <p>Vinograd v Logu je trenutno v obnovi. Več kmalu.</p>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      hrbec: {
-        name: "Log",
-        shortText: "V obnovi",
-        mainText: `V obnovi
-                    `,
-      },
-    };
-  },
-};
-</script>

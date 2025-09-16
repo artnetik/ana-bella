@@ -5,21 +5,15 @@
 </template>
 
 <style lang="scss">
-@import '~assets/styles/mixins';
-@import '~assets/styles/variables';
-@import '~assets/styles/buttons';
-@import '~assets/styles/components';
+@import "~assets/styles/mixins";
+@import "~assets/styles/variables";
+@import "~assets/styles/buttons";
+@import "~assets/styles/components";
 
 html {
   box-sizing: border-box;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -41,7 +35,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 76rem;
+  max-width: 90em;
 }
 
 .text-container {
@@ -56,9 +50,7 @@ body {
   }
 
   p {
-    font-family:
-      CourierPrime,
-      monospace;
+    font-family: CourierPrime, monospace;
     line-height: 1.5em;
     margin-bottom: 1rem;
   }
