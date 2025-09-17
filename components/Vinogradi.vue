@@ -16,7 +16,10 @@
         <p class="img-label">
           {{ vinograd.name }}
         </p>
-        <div class="tr" :class="{ 'tr-active': showVineyard === vinograd.show }" />
+        <div
+          class="tr"
+          :class="{ 'tr-active': showVineyard === vinograd.show }"
+        />
       </div>
     </div>
 
@@ -82,6 +85,7 @@ export default {
 .vinograd {
   align-items: center;
   display: flex;
+  gap: 5rem;
   font-family: "Curier Prime", monospace;
   align-items: flex-start;
   margin: 50px;
@@ -128,19 +132,17 @@ export default {
 
   p {
     font-size: 18px;
-    line-height: 1.5em;
     margin-left: 50px;
 
     @include breakpoint(800px) {
       font-size: 18px;
-      margin: 20px auto 40px;
       text-align: justify;
       max-width: 80%;
     }
 
     @include breakpoint(600px) {
       font-size: 14px;
-      margin: 20px auto 40px;
+
       text-align: justify;
     }
   }

@@ -42,11 +42,11 @@
 
       <h3>ZELEN</h3>
 
-      <h3>
+      <p>
         Zelen je avtohtona bela sorta iz Vipavske doline, ki daje nežna, sveža
         vina z zeliščnimi, cvetličnimi in citrusnimi notami ter prefinjeno,
         elegantno strukturo.
-      </h3>
+      </p>
 
       <h3>CABERNET FRANCK</h3>
 
