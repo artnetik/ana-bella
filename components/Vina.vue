@@ -18,26 +18,31 @@
 
     <div class="text-container">
       <div class="text-center">
-        <a v-scroll-to="'#kontakt'" href="#kontakt" class="btn outlined centered mb-2"
+        <a
+          v-scroll-to="'#kontakt'"
+          href="#kontakt"
+          class="btn outlined centered mb-2"
           >naročilo</a
         >
       </div>
       <p>
-        Pridelujemo vrhunska stekleničena vina: <strong>cabernet sauvignon</strong>,
-        <strong>malvazija</strong>, <strong>rebula</strong>, <strong>sauvignon</strong>,
+        Pridelujemo vrhunska stekleničena vina:
+        <strong>cabernet sauvignon</strong>, <strong>malvazija</strong>,
+        <strong>rebula</strong>, <strong>pinela</strong>,
         <strong>beli pinot</strong>, bele in rdeče zvrsti. Grozdje je
         <strong>obrano ročno</strong>, stiskanje grozdja poteka hitro s
-        <strong>pnevmatsko prešo</strong>. Mošt je hlajen, da se ohranijo vsi aduti, ki
-        jih posamezna sorta premore.
+        <strong>pnevmatsko prešo</strong>. Mošt je hlajen, da se ohranijo vsi
+        aduti, ki jih posamezna sorta premore.
       </p>
       <p>
-        Rdeče sorte maceriramo od 5 do 8 dni, odvisno od sorte in letnika. Na kmetiji
-        težimo k čim boljši kakovosti; v vinograde in nasade vlagamo veliko časa in truda.
-        Želimo, da bodo naši izdelki butični, zato ohranjamo vinograde z najboljšo lego.
+        Rdeče sorte maceriramo od 5 do 8 dni, odvisno od sorte in letnika. Na
+        kmetiji težimo k čim boljši kakovosti; v vinograde in nasade vlagamo
+        veliko časa in truda. Želimo, da bodo naši izdelki butični, zato
+        ohranjamo vinograde z najboljšo lego.
       </p>
       <p>
-        Pri pridelavi vina dajemo prednost avtohtonim vinskih sortam, ki tu že od nekdaj
-        najbolje uspevajo.
+        Pri pridelavi vina dajemo prednost avtohtonim vinskih sortam, ki tu že
+        od nekdaj najbolje uspevajo.
       </p>
     </div>
 
@@ -52,7 +57,11 @@ export default {
   data() {
     return {
       vina: [
-        { id: 1, sorta: "cabernet sauvignon", slika: "/images/cabernet-sauvignon.jpg" },
+        {
+          id: 1,
+          sorta: "cabernet sauvignon",
+          slika: "/images/cabernet-sauvignon.jpg",
+        },
         { id: 2, sorta: "malvazija", slika: "/images/malvazija.jpg" },
         { id: 3, sorta: "rebula", slika: "/images/rebula.jpg" },
         { id: 4, sorta: "beli pinot", slika: "/images/beli-pinot.jpg" },
